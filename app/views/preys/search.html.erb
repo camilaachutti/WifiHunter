@@ -1,0 +1,7 @@
+<div id="search_box">
+<%= form_tag(search_preys_path, :method=>"post") do%>
+<%= text_field_tag(:query) %>
+<%= submit_tag("Search") %>
+<% end %>
+<%= render @results %>
+</div>

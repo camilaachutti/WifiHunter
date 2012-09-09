@@ -1,0 +1,45 @@
+<%= form_for(@prey) do |f| %>
+  <% if @prey.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@prey.errors.count, "error") %> prohibited this prey from being saved:</h2>
+
+      <ul>
+      <% @prey.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :person_name %><br />
+    <%= f.text_field :person_name %>
+  </div>
+  <div class="field">
+    <%= f.label :person_email %><br />
+    <%= f.text_field :person_email %>
+  </div>
+  <div class="field">
+    <%= f.label :country %><br />
+    <%= f.text_field :country %>
+  </div>
+  <div class="field">
+    <%= f.label :state %><br />
+    <%= f.text_field :state %>
+  </div>
+  <div class="field">
+    <%= f.label :city %><br />
+    <%= f.text_field :city %>
+  </div>
+  <div class="field">
+    <%= f.label :place %><br />
+    <%= f.text_field :place %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

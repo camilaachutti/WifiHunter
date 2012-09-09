@@ -1,0 +1,39 @@
+<div id="content2">
+<div id="preys_table">
+<h1>Listing preys</h1>
+
+<table>
+  <tr>
+    <th>Country</th>
+    <th>State</th>
+    <th>City</th>
+    <th>Place</th>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @preys.each do |prey| %>
+  <tr>
+    <td><%= prey.country %></td>
+    <td><%= prey.state %></td>
+    <td><%= prey.city %></td>
+    <td><%= prey.place %></td>
+    <td><%= prey.name %></td>
+    <td><%= link_to 'Show', prey %></td>
+    <td><%= link_to 'Edit', edit_prey_path(prey) %></td>
+    <td><%= link_to 'Destroy', prey, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+</div>
+
+<div id="content">
+<p class="content_p"> Are you tired of searching for open Wi-fi? </p>
+<p class="content_p"> Thinking that we created the Wi-fi Hunter for YOU!</p>
+<p class="content_p">You can help us hunting and sharing your preys! </p> 
+</div>
+</div>
+
+<br />

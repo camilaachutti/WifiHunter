@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+<div id="show_form">
+<p>
+  <b>Person name:</b>
+  <%= @prey.person_name %>
+</p>
+
+<p>
+  <b>Person email:</b>
+  <%= @prey.person_email %>
+</p>
+
+<p>
+  <b>Country:</b>
+  <%= @prey.country %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= @prey.state %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @prey.city %>
+</p>
+
+<p>
+  <b>Place:</b>
+  <%= @prey.place %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @prey.name %>
+</p>
+
+
+<%= link_to 'Edit', edit_prey_path(@prey) %> |
+<%= link_to 'Back', preys_path %>
+</div>

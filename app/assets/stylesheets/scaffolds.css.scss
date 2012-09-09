@@ -1,0 +1,127 @@
+#title {
+  display: inline;
+  font-size: 120px;}
+
+#alltitle {
+  width: 100%;
+  text-align: center; 
+}
+
+#menu {
+  text-align: center;
+  font-size: 40px;
+
+}
+
+#preys_table{
+  float: right;
+  height: 100%;
+  width: 50%;
+
+}
+
+#content {
+  text-align: center;
+  vertical-align: center;
+  margin-top: 30px;
+  height: 500px;
+  font-size: 30px;
+  width: 50%;
+  padding-top: 30px;
+}
+
+#content2 {
+}
+
+#search_box{
+  padding-top: 50px;
+  padding-left: 600px;
+}
+
+#new_prey {
+  text-align: center;
+ 
+}
+
+#new{
+  text-align: center;
+}
+
+#show_form{
+  text-align: center;
+  padding-top: 30px;
+}
+
+.content_p {
+  font-size: 20px;
+}
+
+body {
+  background-color: #CCC;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a {
+  color: #000;
+  &:visited {
+    color: #666;
+  }
+  &:hover {
+    color: #fff;
+    background-color: #000;
+  }
+}
+
+div {
+  &.field, &.actions {
+    margin-bottom: 10px;
+  }
+}
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff;
+  }
+  ul li {
+    font-size: 12px;
+    list-style: square;
+  }
+}
